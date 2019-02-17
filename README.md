@@ -4,6 +4,22 @@ Simplify aspects of running GDLE...
 
 ## Tasks
 
+### Simple Tools
+
+- TeleTowns Get/Set/New Commands (take /myloc as input)
+(arwic output: )
+
+- processing float to hex
+```
+# Get the byte representation (produces D0, EB, FE, 46)
+$bytes = [BitConverter]::GetBytes([single]32629.90625)
+$bytes | Foreach-Object { ("{0:X2}" -f $_) }
+
+# Convert the $bytes back to a float (produces 32629.91)
+[BitConverter]::ToSingle($bytes, 0)
+```
+
+
 ### Compile GDLE Project
 
 - Find appropriate commandline arguments
