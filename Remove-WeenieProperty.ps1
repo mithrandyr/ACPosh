@@ -19,7 +19,7 @@ process {
                     else { Write-Warning "$n does not have '$Section[$key]'" }
                 }
                 else { 
-                    $obj.$Section = @{}
+                    $obj.$Section = @()
                     $Update = $true
                 }
             }

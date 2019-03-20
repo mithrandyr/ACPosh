@@ -14,7 +14,7 @@ process {
             
             if(-not $obj.$Section) {
                 if(-not $Key) { $obj.$Section = $Value }
-                else { $obj.$Section = @{ $Key = $Value} }
+                else { $obj | Add-Member -NotePropertyName $Section -NotePropertyValue @([PSCustomObject]@{key=$Key; value=$Value}) }
                 $Update = $true
             }
             else {
