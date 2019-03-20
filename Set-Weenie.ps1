@@ -1,7 +1,7 @@
 param(
     [Parameter(mandatory,ValueFromPipeline,ValueFromPipelineByPropertyName)][Alias("FullName")][string[]]$path
     , [Parameter(mandatory, ValueFromPipelineByPropertyName)][ValidateSet("intStats","boolStats","didStats","floatStats","spellbook")][string]$Section
-    , [Parameter(ValueFromPipelineByPropertyName)][string]$Key
+    , [Parameter(ValueFromPipelineByPropertyName)][int]$Key
     , [Parameter(mandatory, ValueFromPipelineByPropertyName)]$Value
     , [switch]$Force
 )
@@ -14,14 +14,14 @@ process {
             
             if(-not $obj.$Section) {
                 if(-not $Key) { $obj.$Section = $Value }
-                else { $obj | Add-Member -NotePropertyName $Section -NotePropertyValue @([PSCustomObject]@{key=$Key; value=$Value}) }
+                else { $obj | Add-Member -NotePropertyName $Section -NotePropertyValue @([PSCustomObject]@{key=$Key; value=$Value}) -Force }
                 $Update = $true
             }
             else {
                 if($Key) {
                     if($obj.$Section.where({$_.key -eq $Key})){
                         if($Force) {
-                            $obj.$Section.where({$_.Key -eq $Key})[0] = $Value
+                            $obj.$Section.where({$_.Key -eq $Key})[0].Value = $Value
                             $Update = $true
                         }
                         else {
