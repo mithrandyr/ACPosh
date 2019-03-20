@@ -6,6 +6,13 @@ Simplify aspects of running GDLE...
 
 ### Simple Tools
 
+## Weenie Editing
+- Select-Weenie allows for easy viewing of multiple weenies side by side (for instance, touching an armor set)
+- Set-Weenie allows for updating the same value on multiple weenies
+- Remove-WeeniePropery allows for easy removal of a section or key within a section of a weenie
+
+## Other
+
 - TeleTowns Get/Set/New Commands (take /myloc as input)
 (arwic output: )
 
