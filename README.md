@@ -2,6 +2,8 @@
 PowerShell Scripts for GDLE
 Simplify aspects of running GDLE...
 
+- SetupGDLE.ps1 -- copy and modify the values, will do download, build and deploy.
+
 ## Tasks
 
 ### Simple Tools

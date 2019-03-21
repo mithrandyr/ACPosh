@@ -8,10 +8,13 @@ Param(
 [string]$DestZip = Join-Path $env:TEMP "GDLE-Repo.zip"
 
 Write-Host "Grabbing from '$url' and extracting to '$ExtractLocation'..."
-if(-not (Test-Path $ExtractLocation)) {
-    Write-Host "Creating Directory: $ExtractLocation"
-    New-Item $ExtractLocation -ItemType Directory -Force | Out-Null    
+if(Test-Path $ExtractLocation) { 
+    Write-Host "Cleaning up: $ExtractLocation"
+    Remove-Item $ExtractLocation -Force -Recurse
 }
+
+Write-Host "Creating Directory: $ExtractLocation"
+New-Item $ExtractLocation -ItemType Directory -Force | Out-Null    
 
 Write-Host "Downloading Repo as ZIP..."
 Invoke-WebRequest -UseBasicParsing -Uri $url -OutFile $DestZip
