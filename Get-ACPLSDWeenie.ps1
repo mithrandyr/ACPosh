@@ -1,5 +1,5 @@
 Param([Parameter(Mandatory)][string]$DownloadFolder
-    , [Parameter(ValueFromPipeline)][ValidateRange(1,99999)][int]$WCID
+    , [Parameter(ValueFromPipeline)][ValidateRange(1,99999)][int[]]$WCID
     , [switch]$All
 )
 
