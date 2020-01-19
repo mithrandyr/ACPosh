@@ -1,0 +1,6 @@
+/spawnwcidinv 20986  # IRON +1 dmg
+/spawnwcidinv 21042  # BRASS +def %
+/spawnwcidinv 20994  # VELVET +atk %
+
+/setint 92 100 #amount of salvage
+/setint 105 10 #workmanship

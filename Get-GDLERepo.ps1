@@ -1,6 +1,6 @@
 Param(
     [Parameter()][string]$BaseURL = "https://gitlab.com/Scribble/gdlenhanced/-/archive/{0}/gdlenhanced-master.zip"
-    , [Parameter()][ValidateSet("master","TestServer")][string]$Branch = "master"
+    , [Parameter()][string]$Branch = "master" #1.33 is latest tag
     , [Parameter(Mandatory)][string]$ExtractLocation
 )
 
