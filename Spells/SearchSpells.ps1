@@ -1,24 +1,28 @@
 [cmdletBinding(DefaultParameterSetName="search")]
-param([string]$Name
-        , [Parameter(ParameterSetName="search")][string[]][ValidateSet("Life Magic","Item Enchantment","Creature Enchantment","War Magic","Void Magic")]$School
-        , [Parameter(ParameterSetName="search")][int[]][ValidateSet(1,2,3,4,5,6,7,8)]$SpellLevel
-        , [Parameter(ParameterSetName="search")][string[]][ValidateSet("Resistable","PKSensitive","Beneficial", "TargetSelf","TargetOther","Reversed","NotIndoor","NotResearchable","FastCast")]$Flags
-        , [Parameter(ParameterSetName="search")][string]$Category
-        , [Parameter(Mandatory,ParameterSetName="id")][int]$SpellId
-        , [switch]$ForClipboard
-        , [string]$filePath = "$PSScriptRoot\spellData.json"
-    )
+param([Parameter(ParameterSetName="search")][string]$Name
+    , [Parameter(ParameterSetName="search")][string]$Description
+    , [Parameter(ParameterSetName="search")][string[]][ValidateSet("Life Magic","Item Enchantment","Creature Enchantment","War Magic","Void Magic")]$School
+    , [Parameter(ParameterSetName="search")][int[]][ValidateSet(1,2,3,4,5,6,7,8)]$SpellLevel
+    , [Parameter(ParameterSetName="search")][string[]][ValidateSet("Boost","Dispel","Enchantment","Enchantment Projectile","Fellow Boost","Fellow Dispel","Fellow Enchantment","Fellow PortalSending","Life Projectile","Portal Link","Portal Recall","Portal Sending","Portal Summon","Projectile","Transfer")]$SpellType
+    , [Parameter(ParameterSetName="search")][string[]][ValidateSet("Resistable","PKSensitive","Beneficial", "TargetSelf","TargetOther","Reversed","NotIndoor","NotResearchable","FastCast")]$Flags
+    , [Parameter(ParameterSetName="search")][string]$Category
+    , [Parameter(Mandatory,ParameterSetName="id")][int]$Id
+    , [switch]$ForClipboard
+    , [string]$filePath = "$PSScriptRoot\spellData.json"
+)
 
 $spells = Get-Content $filePath -Raw | ConvertFrom-Json
 
-if($SpellId) {
-    $spells = $spells.where({$_.SpellId -eq $SpellId})
+if($Id) {
+    $spells = $spells.where({$_.SpellId -eq $Id})
 }
 else {
     $filterArray = @()
-    if($name) { $filterArray += {$_.Name -like "*$name*"} }
+    if($Name) { $filterArray += {$_.Name -like "*$name*"} }
+    if($Description) { $filterArray += {$_.Description -like "*$Description*"} }
     if($School) { $filterArray += {$_.School -in $School} }
     if($SpellLevel) { $filterArray += {$_.SpellLevel -in $SpellLevel} }
+    if($SpellType) { $filterArray += {$_.SpellType -in $SpellType} }
     if($Category) { $filterArray += {$_.Category -like "*$Category*"} }
     if($Flags) { $filterArray += {
         $r = $false
