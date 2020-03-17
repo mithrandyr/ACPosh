@@ -2,6 +2,12 @@ param([int]$NumberOfThreads = 5
     , [datetime]$UpdatedAfter = "2019-09-24"
     , [string]$DestinationPath = "E:\Games\ACServer\Data\json\weenies")
 
+<#
+TODO
+    - Don't record all wcids -- just counts
+    - double check which ones are being flagged to save to disk (date seems off)
+#>
+
 [scriptblock]$SB = {
     Param([int[]]$list, [datetime]$check, [string]$DownloadFolder, [System.Collections.Generic.List[System.Management.Automation.PSObject]]$resultList)
     [string]$LSDLink = "https://www.lifestoned.org/Weenie/DownloadOriginal?id={0}"
@@ -66,7 +72,7 @@ $watcherObject = [PSCustomObject]@{
     } |
     Add-Member -MemberType ScriptProperty -Name "ElapsedThreadTime" -Value {($this.Results | Measure-Object -Sum Time).Sum} -PassThru |
     Add-Member -MemberType ScriptProperty -Name "ThreadFactor" -Value { [math]::round($this.ElapsedThreadTime / $this.Timer.Elapsed.TotalSeconds, 2)} -PassThru |
-    Add-Member -MemberType ScriptProperty -Name "WeenieUpdatedCount" -Value {$this.Results.Succes.Count} -PassThru
+    Add-Member -MemberType ScriptProperty -Name "WeenieUpdatedCount" -Value {$this.Results.Success.Count} -PassThru
 
 Start-ThreadJob -Name "GetLatestLifestoned" -ThrottleLimit ($NumberOfThreads + 1) -ScriptBlock $watcher -StreamingHost $host -ArgumentList $watcherObject | Out-Null
 $maxId = 100000
