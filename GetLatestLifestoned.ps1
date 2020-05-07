@@ -1,5 +1,5 @@
-param([int]$NumberOfThreads = 5
-    , [datetime]$UpdatedAfter = "2019-09-24"
+param([int]$NumberOfThreads = 16
+    , [datetime]$UpdatedAfter = "2020-03-14"
     , [string]$DestinationPath = "E:\Games\ACServer\Data\json\weenies")
 
 <#
@@ -13,10 +13,10 @@ TODO
     [string]$LSDLink = "https://www.lifestoned.org/Weenie/DownloadOriginal?id={0}"
     
     $results = [PSCustomObject]@{
-        Success = [int[]]@()
-        FailureOld = [int[]]@()
-        FailureNotDone = [int[]]@()
-        FailureNonExistent = [int[]]@()
+        Success = 0
+        FailureOld = 0
+        FailureNotDone = 0
+        FailureNonExistent = 0
         Time = 0.0
     }
 
@@ -30,15 +30,15 @@ TODO
             $fileName = Join-Path $DownloadFolder $fileName
             $json = $data.Content | ConvertFrom-Json
             if($json.isDone) {
-                if([datetime]$json.lastModified -gt $UpdatedAfter) {
+                if([datetime]$json.lastModified -gt $check) {
                     Set-Content -Path $fileName -Value $data.Content -Force
-                    $results.Success += $wcid
+                    $results.Success += 1
                 }
-                else { $results.FailureOld +=$wcid }
+                else { $results.FailureOld += 1 }
             }
-            else { $results.FailureNotDone += $wcid }
+            else { $results.FailureNotDone += 1 }
         }
-        else { $results.FailureNonExistent += $wcid }
+        else { $results.FailureNonExistent += 1 }
         $c += 1
     }
     $sw.Stop()

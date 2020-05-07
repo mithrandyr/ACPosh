@@ -6,6 +6,7 @@
 | INT | 44 | Top End Damage |
 | INT | 105 | Workmanship |
 | INT | 131 | Material Type (See Lookup) |
+| INT | 171 | Number of Tinks |
 | INT | 179 | Imbue Effect (See Lookup) |
 | Float | 22 | Variance |
 | Float | 29 | Melee Def Skill (1.15 for 15%) |
@@ -13,12 +14,13 @@
 | Float | 63 | Missile Weapon Damage Mod |
 | Float | 136 | Crushing Blow Multiplier |
 | Float | 147 | Critical Strike Multiplier |
+| Float | 144 | Mana Conversion Modifier (.05 for 5%) |
 | Float | 149 | Missile Def Skill (1.15 for 15%) |
 | Float | 150 | Magic Def Skill (1.15 for 15%) |
+| Float | 152 | Elemental Damage |
 | String | 1 | Object Name |
 | String | 7 | Inscription |
 | String | 8 | Inscriber |
-
 
 ## Imbue Lookup
 | # | Description |
@@ -56,7 +58,7 @@
 | 41 | Sunstone | Magic Item | Imbues Armor Rending | 30103 |
 | 21 | Fire Opal | Magic Item | Imbues Crippling Blow | 30098 |
 | 14 | Black Opal | Magic Item | Imbues Critical Strike | 30096 |
-| 67 | Green Garnet | Magic Item | Improves a wand's PvM and PvP damage modifier by 1% |
+| 67 | Green Garnet | Magic Item | Improves a wand's PvM and PvP damage modifier by 1% | 21050 |
 | 33 | Opal | Magic Item | Increases the item's Mana Conversion bonus by 1% | 21065 |
 | 64 | Steel | Armor | Armor Level by +20 | 29581 |
 | 13 | Armoredillo Hide | Armor | Acid Protection by 0.4 | 20981 |
