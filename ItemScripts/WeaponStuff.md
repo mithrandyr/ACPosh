@@ -42,7 +42,7 @@
 ## Material Lookup
 | ID | Type | Skill | Description | WeenieID |
 |-|-|-|-|-|
-| 61 | Iron | Weapon | Increases maximum damage by 1 |  |
+| 61 | Iron | Weapon | Increases maximum damage by 1 | 20986 |
 | 67 | Granite | Weapon | Improves a melee weapon's variance by 20% | 29576 |
 | 57 | Brass | Weapon | Increases melee defense bonus by 1% | 21042 |
 | 7 | Velvet | Weapon | Increases attack skill bonus by 1% |

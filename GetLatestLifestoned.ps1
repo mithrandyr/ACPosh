@@ -1,6 +1,9 @@
 param([int]$NumberOfThreads = 16
     , [datetime]$UpdatedAfter = "2020-03-14"
-    , [string]$DestinationPath = "E:\Games\ACServer\Data\json\weenies")
+    , [string]$DestinationPath = "E:\Games\ACServer\Data\json\weenies"
+    , [switch]$All
+    , [int]$StartWCID = 1
+    , [int]$StopWCID = 99999)
 
 <#
 TODO
@@ -29,8 +32,8 @@ TODO
             [string]$fileName = ($data.Headers["Content-Disposition"] -split "filename=")[1] -replace '"'
             $fileName = Join-Path $DownloadFolder $fileName
             $json = $data.Content | ConvertFrom-Json
-            if($json.isDone) {
-                if([datetime]$json.lastModified -gt $check) {
+            if($json.isDone -or $All) {
+                if(([datetime]$json.lastModified -gt $check) -or $All) {
                     Set-Content -Path $fileName -Value $data.Content -Force
                     $results.Success += 1
                 }
@@ -72,14 +75,13 @@ $watcherObject = [PSCustomObject]@{
     } |
     Add-Member -MemberType ScriptProperty -Name "ElapsedThreadTime" -Value {($this.Results | Measure-Object -Sum Time).Sum} -PassThru |
     Add-Member -MemberType ScriptProperty -Name "ThreadFactor" -Value { [math]::round($this.ElapsedThreadTime / $this.Timer.Elapsed.TotalSeconds, 2)} -PassThru |
-    Add-Member -MemberType ScriptProperty -Name "WeenieUpdatedCount" -Value {$this.Results.Success.Count} -PassThru
+    Add-Member -MemberType ScriptProperty -Name "WeenieUpdatedCount" -Value {$this.Results.Success | Measure-Object -Sum | % Sum} -PassThru
 
 Start-ThreadJob -Name "GetLatestLifestoned" -ThrottleLimit ($NumberOfThreads + 1) -ScriptBlock $watcher -StreamingHost $host -ArgumentList $watcherObject | Out-Null
-$maxId = 100000
 
-[int[]]$wcidList = @(1..$maxId | Get-Random -Count $maxId)
+[int[]]$wcidList = @($StartWCID..$StopWCID | Get-Random -Count ($StopWCID - $StartWCID))
 $c = 1
-while($c -le $maxId) {
+while($c -le ($StopWCID - $StartWCID)) {
     $watcherObject.JobList.Add((Start-ThreadJob -ScriptBlock $SB -ArgumentList $wcidList[$c..($c+49)], $UpdatedAfter, $DestinationPath, $watcherObject.Results -Name "WCID-Download"))
     $c += 50
 }
