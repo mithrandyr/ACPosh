@@ -1,4 +1,4 @@
-param([int]$NumberOfThreads = 16
+param([int]$NumberOfThreads = 32
     , [datetime]$UpdatedAfter = "2020-03-14"
     , [string]$DestinationPath = "E:\Games\ACServer\Data\json\weenies"
     , [switch]$All
@@ -12,7 +12,7 @@ TODO
 #>
 
 [scriptblock]$SB = {
-    Param([int[]]$list, [datetime]$check, [string]$DownloadFolder, [System.Collections.Generic.List[System.Management.Automation.PSObject]]$resultList)
+    Param([int[]]$list, [datetime]$check, [string]$DownloadFolder, [System.Management.Automation.PSObject]$Manager, [bool]$All)
     [string]$LSDLink = "https://www.lifestoned.org/Weenie/DownloadOriginal?id={0}"
     
     $results = [PSCustomObject]@{
@@ -48,7 +48,14 @@ TODO
     Write-Progress -Activity "Processing WCIDs..." -Completed
     $results.Time = $sw.Elapsed.TotalSeconds
     $sw = $null
-    $resultList.Add($results)
+    
+    $Manager.Results.Success += $results.Success
+    $Manager.Results.Old += $results.FailureOld
+    $Manager.Results.NotDone += $results.FailureNotDone
+    $Manager.Results.Missing += $results.FailureNonExistent
+    $Manager.Results.Time += $results.Time
+    $results = $null
+    Remove-Variable Results
 }
 
 [scriptblock]$watcher = {
@@ -70,19 +77,27 @@ TODO
 $watcherObject = [PSCustomObject]@{
         JobList = [System.Collections.Generic.List[System.Management.Automation.Job2]]::new()
         KeepRunning = $true
-        Results = [System.Collections.Generic.List[System.Management.Automation.PSObject]]::new()
+        Results = [Ordered]@{
+            Success = 0
+            Old = 0
+            NotDone = 0
+            Missing = 0
+            Time = 0.0
+        }
         Timer = [System.Diagnostics.Stopwatch]::StartNew()
+        WatcherJob = $null
     } |
-    Add-Member -MemberType ScriptProperty -Name "ElapsedThreadTime" -Value {($this.Results | Measure-Object -Sum Time).Sum} -PassThru |
+    Add-Member -MemberType ScriptProperty -Name "ElapsedThreadTime" -Value {$this.Results.Time} -PassThru |
     Add-Member -MemberType ScriptProperty -Name "ThreadFactor" -Value { [math]::round($this.ElapsedThreadTime / $this.Timer.Elapsed.TotalSeconds, 2)} -PassThru |
-    Add-Member -MemberType ScriptProperty -Name "WeenieUpdatedCount" -Value {$this.Results.Success | Measure-Object -Sum | % Sum} -PassThru
+    Add-Member -MemberType ScriptProperty -Name "WeenieUpdatedCount" -Value {$this.Results.Success } -PassThru |
+    Add-Member -MemberType ScriptMethod -Name "Cancel" -Value {$this.KeepRunning = $false; $this.JobList | Stop-Job; $this.JobList | Remove-Job; Start-Sleep -Seconds 1; Stop-Job $this.WatcherJob; Remove-Job $this.WatcherJob } -PassThru
 
-Start-ThreadJob -Name "GetLatestLifestoned" -ThrottleLimit ($NumberOfThreads + 1) -ScriptBlock $watcher -StreamingHost $host -ArgumentList $watcherObject | Out-Null
+$watcherObject.WatcherJob = Start-ThreadJob -Name "GetLatestLifestoned" -ThrottleLimit ($NumberOfThreads + 1) -ScriptBlock $watcher -StreamingHost $host -ArgumentList $watcherObject
 
 [int[]]$wcidList = @($StartWCID..$StopWCID | Get-Random -Count ($StopWCID - $StartWCID))
 $c = 1
 while($c -le ($StopWCID - $StartWCID)) {
-    $watcherObject.JobList.Add((Start-ThreadJob -ScriptBlock $SB -ArgumentList $wcidList[$c..($c+49)], $UpdatedAfter, $DestinationPath, $watcherObject.Results -Name "WCID-Download"))
+    $watcherObject.JobList.Add((Start-ThreadJob -ScriptBlock $SB -ArgumentList $wcidList[$c..($c+49)], $UpdatedAfter, $DestinationPath, $watcherObject, $All.IsPresent -Name "WCID-Download"))
     $c += 50
 }
 $watcherObject
