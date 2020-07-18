@@ -1,4 +1,4 @@
-param([int]$NumberOfThreads = 32
+param([int]$NumberOfThreads = 4
     , [datetime]$UpdatedAfter = "2020-03-14"
     , [string]$DestinationPath = "E:\Games\ACServer\Data\json\weenies"
     , [switch]$All
@@ -11,7 +11,8 @@ param([int]$NumberOfThreads = 32
     
     $sw = [System.Diagnostics.Stopwatch]::StartNew()
     $c = 0
-    foreach($wcid in $list) {
+    $manager.Remaining = $manager.WCIDs.Count
+    foreach($wcid in $Manager.WCIDs) {
         if($manager.Cancel) { break }
         Write-Progress -Activity "Processing WCIDs..." -CurrentOperation $wcid -PercentComplete (100 * $c / $list.count)
         $data = Invoke-WebRequest -UseBasicParsing -Uri ($LSDLink -f $wcid)
@@ -30,12 +31,15 @@ param([int]$NumberOfThreads = 32
         }
         else { $manager.Missing += 1 }
         $c += 1
+        $manager.Completed += 1
+        $manager.Remaining -= 1
         $manager.Time += $sw.Elapsed.TotalSeconds
         $sw.restart()
     }
     $sw.Stop()
     Write-Progress -Activity "Processing WCIDs..." -Completed
     $manager.Time = $sw.Elapsed.TotalSeconds
+    $Manager.IsDone = $true
     $sw = $null
 }
 
@@ -43,12 +47,25 @@ param([int]$NumberOfThreads = 32
     param($obj)
     $initTitle = $host.UI.RawUI.WindowTitle
     Start-Sleep -Seconds 1
+    $c = 4
     while($obj.KeepRunning) {
-        $Completed = $obj.JobList.where({$_.State -eq "Completed"}).Count
-        $ToGo = $obj.JobList.where({$_.State -ne "Completed"}).Count
+        $c -= 1
+        if($c -eq 1) {
+            $c = 4
+            $ToGo = $obj.Results.Remaining
+            $ToGo = $ToGo | Measure-Object -Sum | Select-Object -ExpandProperty Sum
 
-        if($ToGo -eq 0) { break }
-        else { $host.UI.RawUI.WindowTitle = "{0} - Completed: {1}% | {2} Remaining" -f $initTitle, [int](100 * $Completed / ($Completed + $ToGo)), $ToGo }
+            if($ToGo -eq 0) { write-host "breaking..."; break }
+            else {
+                $completed = $obj.Results.Completed
+                $completed = $completed | Measure-Object -Sum | Select-Object -ExpandProperty Sum
+                $eta = [math]::round($obj.Timer.Elapsed.TotalSeconds / $completed * $ToGo,0)
+                $etaS = $eta % 60
+                $etaM = ($eta - $etas) / 60
+
+                $host.UI.RawUI.WindowTitle = "{0} - Completed: {1}% | {2} Remaining | Rate: {3} | ETA: {4}m {5}s" -f $initTitle, [int](100 * $Completed / ($Completed + $ToGo)), $ToGo, $obj.Rate, $etaM, $etaS
+            }
+        }
         Start-Sleep -Milliseconds 500
     }
     $host.UI.RawUI.WindowTitle = $initTitle
@@ -66,22 +83,25 @@ $watcherObject = [PSCustomObject]@{
             IsDone = $false
             Cancel = $false
             WCIDs = @()
-            Job = $null  
+            Job = $null
+            Completed = 0
+            Remaining = 0
         }}
         Timer = [System.Diagnostics.Stopwatch]::StartNew()
         WatcherJob = $null
     } |
-    Add-Member -MemberType ScriptProperty -Name "ElapsedThreadTime" -Value {$this.Results | Measure-Object -Sum -Property Time | ForEach-Object Time } -PassThru |
-    Add-Member -MemberType ScriptProperty -Name "ThreadFactor" -Value { [math]::round($this.ElapsedThreadTime / $this.Timer.Elapsed.TotalSeconds, 2)} -PassThru |
-    Add-Member -MemberType ScriptProperty -Name "WeenieUpdatedCount" -Value {$this.Results | Measure-Object -Sum -Property Success | ForEach-Object Success } -PassThru |
+    Add-Member -MemberType ScriptProperty -Name "ElapsedThreadTime" -Value {$this.Results | Measure-Object -Sum -Property Time | ForEach-Object Sum } -PassThru |
+    Add-Member -MemberType ScriptProperty -Name "Rate" -Value { [math]::round(($this.Results | Measure-Object -Sum -Property Completed).Sum / $this.Timer.Elapsed.TotalSeconds, 1)} -PassThru |
+    Add-Member -MemberType ScriptProperty -Name "WeenieUpdatedCount" -Value {$this.Results | Measure-Object -Sum -Property Success | ForEach-Object Sum } -PassThru |
     Add-Member -MemberType ScriptMethod -Name "Cancel" -Value {
         $this.KeepRunning = $false
         $this.Results | Where-Object IsDone -eq $false | ForEach-Object {$_.Cancel = $true}
-        while($this.Results | Where-Object IsDone -eq $false) { Write-Host "." -NoNewLine; Start-Sleep -Milliseconds 250 }
+        while($this.Results | Where-Object {$_.Job.State -ne "Completed"}) { Write-Host "." -NoNewLine; Start-Sleep -Milliseconds 250 }
         $this.Results.Job | Stop-Job
         $this.Results.Job | Remove-Job
         Stop-Job $this.WatcherJob
         Remove-Job $this.WatcherJob
+        $this.Timer.Stop()
     } -PassThru
 
 $watcherObject.WatcherJob = Start-ThreadJob -Name "GetLatestLifestoned" -ThrottleLimit ($NumberOfThreads + 1) -ScriptBlock $watcher -StreamingHost $host -ArgumentList $watcherObject
@@ -97,5 +117,4 @@ $batchSize = [math]::Truncate(($StopWCID - $StartWCID) / $NumberOfThreads) + 1
     $subProcess.WCIDs = $wcidList[$s..$e]
     $subProcess.Job = Start-ThreadJob -ScriptBlock $SB -ArgumentList $subProcess, $UpdatedAfter, $DestinationPath, $All.IsPresent -Name "WCID-Download"
 }
-Remove-Variable subProcess
 $watcherObject
