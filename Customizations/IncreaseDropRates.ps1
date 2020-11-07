@@ -6,14 +6,14 @@ param([parameter(Mandatory,ValueFromPipeline,ValueFromPipelineByPropertyName)][A
 begin {
     if($ItemDropRates.Count -eq 0) {
         $ItemDropRates = @{
-            6353 = .2 #Pyreal Mote
+            6353 = .1 #Pyreal Mote
             6355 = .1 #Pyreal Sliver
-            6060 = .2 #Dark Speck
-            6059 = .2 #Dark Sliver
-            6058 = .2 #Dark Shard
-            6055 = .2 #Cracked Shard
-            6057 = .2 #Tiny Shard
-            6056 = .2 #Small Shard
+            6060 = .15 #Dark Speck
+            6059 = .15 #Dark Sliver
+            6058 = .15 #Dark Shard
+            6055 = .15 #Cracked Shard
+            6057 = .15 #Tiny Shard
+            6056 = .15 #Small Shard
         }
     }
     if(-not(Test-Path -Path $ChangedInfoDirectory)) { New-Item -ItemType Directory -Path $ChangedInfoDirectory | Out-Null }
