@@ -1,6 +1,6 @@
 param([parameter(Mandatory,ValueFromPipeline,ValueFromPipelineByPropertyName)][Alias("FullName")][string]$Path
     , [parameter()][hashtable]$ItemDropRates
-    , [parameter(Mandatory)][string]$ChangedInfoDirectory
+    , [parameter()][string]$ChangedInfoDirectory = "E:\Games\trackChanges"
     , [switch]$noChange
 )
 begin {
@@ -11,9 +11,12 @@ begin {
             6060 = .15 #Dark Speck
             6059 = .15 #Dark Sliver
             6058 = .15 #Dark Shard
-            6055 = .15 #Cracked Shard
-            6057 = .15 #Tiny Shard
-            6056 = .15 #Small Shard
+            6055 = .3 #Cracked Shard
+            6057 = .3 #Tiny Shard
+            6056 = .3 #Small Shard
+            12689 = .1 #Diamond Powder
+            7338 = .2 #Diamond Heart
+            23202 = .2 #Platinum Golem Heart
         }
     }
     if(-not(Test-Path -Path $ChangedInfoDirectory)) { New-Item -ItemType Directory -Path $ChangedInfoDirectory | Out-Null }

@@ -44,9 +44,10 @@
 |-|-|-|-|-|
 | 61 | Iron | Weapon | Increases maximum damage by 1 | 20986 |
 | 67 | Granite | Weapon | Improves a melee weapon's variance by 20% | 29576 |
-| 57 | Brass | Weapon | Increases melee defense bonus by 1% | 21042 |
+| 57 | Brass | Weapon | Increases melee defense bonus by 1% | 36563 |
 | 7 | Velvet | Weapon | Increases attack skill bonus by 1% |
-| 74 | Mahogany | Weapon | Increases damage modifier by 4% (missile) | 29580 |
+| 74 | Mahogany | Weapon | Increases damage modifier by 4% (missile) | 29579 |
+| 67 | Green Garnet | Magic Item | Improves a wand's PvM and PvP damage modifier by 1% | 36565 |
 | 75 | Oak | Weapon | Decreases speed by 50 |
 | 21 | Emerald | Weapon | Imbues Acid Rending | 30097 |
 | 13 | Aquamarine | Weapon | Imbues Cold Rending | 30094 |
@@ -58,7 +59,6 @@
 | 41 | Sunstone | Magic Item | Imbues Armor Rending | 30103 |
 | 21 | Fire Opal | Magic Item | Imbues Crippling Blow | 30098 |
 | 14 | Black Opal | Magic Item | Imbues Critical Strike | 30096 |
-| 67 | Green Garnet | Magic Item | Improves a wand's PvM and PvP damage modifier by 1% | 21050 |
 | 33 | Opal | Magic Item | Increases the item's Mana Conversion bonus by 1% | 21065 |
 | 64 | Steel | Armor | Armor Level by +20 | 29581 |
 | 13 | Armoredillo Hide | Armor | Acid Protection by 0.4 | 20981 |

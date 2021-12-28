@@ -55,7 +55,8 @@ Write-Host "Processing data..." -NoNewline
                         MinValue = $spell.value.meta_spell.spell.smod.val
                         MaxValue = $spell.value.meta_spell.spell.smod.val
                         StatMod = if($spellAdditional.StatModKey.contains("(")) { $spellAdditional.StatModkey.SubString(0, $spellAdditional.StatModKey.IndexOf("(")-1) } else { $spellAdditional.StatModKey }
-                        Duration = $spellAdditional.Duration
+                        DurationValue = $spell.value.meta_spell.spell.duration
+                        DurationDesc = $spellAdditional.Duration
                     }
                     if($spellInfo.Details.StatMod -eq "Unhandled StatModType") { $spellInfo.Details.StatMod = "NaturalArmor" }
                 }
@@ -97,7 +98,7 @@ Write-Host "Processing data..." -NoNewline
     }
 }
 
-$limit = 4
+$limit = 8
 $grp = [math]::Ceiling($spells.count / $limit)
 0..($limit-1) |
     ForEach-Object {
