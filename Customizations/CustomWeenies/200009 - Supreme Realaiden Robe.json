@@ -1,0 +1,148 @@
+{
+    "wcid": 200009,
+    "weenieType": 2,
+    "boolStats": [
+        {"key": 11,"value": 1},
+        {"key": 13,"value": 1},
+        {"key": 14,"value": 1},
+        {"key": 19,"value": 1},
+        {"key": 22,"value": 1},
+        {"key": 69,"value": 0}
+    ],
+    "intStats": [
+        {"key": 1,"value": 4},
+        {"key": 3,"value": 39},
+        {"key": 4,"value": 130816},
+        {"key": 5,"value": 1000},
+        {"key": 8,"value": 150},
+        {"key": 9,"value": 32545},
+        {"key": 16,"value": 1},
+        {"key": 19,"value": 10000},
+        {"key": 27,"value": 1},
+        {"key": 28,"value": 460},
+        {"key": 53,"value": 101},
+        {"key": 93,"value": 1044},
+        {"key": 106,"value": 500},
+        {"key": 107,"value": 5000},
+        {"key": 108,"value": 5000},
+        {"key": 109,"value": 200},
+        {"key": 151,"value": 2},
+        {"key": 158,"value": 7},
+        {"key": 160,"value": 100}
+    ],
+    "didStats": [
+        {
+            "key": 1,
+            "value": 33554854
+        },
+        {
+            "key": 3,
+            "value": 536870932
+        },
+        {
+            "key": 6,
+            "value": 67108990
+        },
+        {
+            "key": 7,
+            "value": 268436263
+        },
+        {
+            "key": 8,
+            "value": 100674100
+        },
+        {
+            "key": 22,
+            "value": 872415275
+        }
+    ],
+    "iidStats": [],
+    "floatStats": [
+        {"key": 5,"value": -0.05},
+        {
+            "key": 12,
+            "value": 0.8309
+        },
+        {
+            "key": 13,
+            "value": 1.0
+        },
+        {
+            "key": 14,
+            "value": 1.0
+        },
+        {
+            "key": 15,
+            "value": 1.0
+        },
+        {
+            "key": 16,
+            "value": 1.0
+        },
+        {
+            "key": 17,
+            "value": 1.0
+        },
+        {
+            "key": 18,
+            "value": 1.0
+        },
+        {
+            "key": 19,
+            "value": 1.0
+        },
+        {
+            "key": 165,
+            "value": 1.0
+        }
+    ],
+    "int64Stats": [],
+    "stringStats": [
+        {
+            "key": 1,
+            "value": "Supreme Realaiden Robe"
+        },
+        {
+            "key": 16,
+            "value": "A robe crafted from pure mana.  It has a crystal matrix that makes it stronger and more resistant to damage."
+        }
+    ],
+    "spellbook": [
+        { "key": 3864, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 3533, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 3531, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 3863, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 3530, "value": { "casting_likelihood": 2.0 } }        
+        , { "key": 3862, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4418, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4405, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4395, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4400, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4414, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4417, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4460, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4086, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4291, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4464, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4466, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4470, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4468, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4496, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4494, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4472, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4462, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4498, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 3246, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 3247, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 3248, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 2609, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 2610, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 2612, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 2615, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 2611, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 2613, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 2614, "value": { "casting_likelihood": 2.0 } }
+    ],
+    "changelog": [],
+    "isDone": false
+}

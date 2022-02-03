@@ -1,0 +1,217 @@
+{
+    "wcid": 200007,
+    "weenieType": 2,
+    "boolStats": [
+        {
+            "key": 100,
+            "value": 1
+        },
+        {
+            "key": 22,
+            "value": 1
+        },
+        {
+            "key": 23,
+            "value": 1
+        }
+    ],
+    "intStats": [
+        {
+            "key": 9,
+            "value": 222
+        },
+        {
+            "key": 1,
+            "value": 4
+        },
+        {
+            "key": 27,
+            "value": 1
+        },
+        {
+            "key": 19,
+            "value": 3000
+        },
+        {
+            "key": 3,
+            "value": 61
+        },
+        {
+            "key": 4,
+            "value": 126
+        },
+        {
+            "key": 5,
+            "value": 300
+        },
+        {
+            "key": 16,
+            "value": 1
+        },
+        {
+            "key": 8,
+            "value": 90
+        },
+        {
+            "key": 28,
+            "value": 0
+        },
+        {
+            "key": 93,
+            "value": 1044
+        }
+    ],
+    "didStats": [
+        {
+            "key": 1,
+            "value": 33554854
+        },
+        {
+            "key": 3,
+            "value": 536870932
+        },
+        {
+            "key": 36,
+            "value": 234881046
+        },
+        {
+            "key": 22,
+            "value": 872415275
+        },
+        {
+            "key": 6,
+            "value": 67108990
+        },
+        {
+            "key": 7,
+            "value": 268436815
+        },
+        {
+            "key": 8,
+            "value": 100676291
+        }
+    ],
+    "iidStats": [],
+    "floatStats": [
+        {
+            "key": 12,
+            "value": 0.75
+        },
+        {
+            "key": 13,
+            "value": 0.75
+        },
+        {
+            "key": 14,
+            "value": 0.75
+        },
+        {
+            "key": 15,
+            "value": 0.75
+        },
+        {
+            "key": 16,
+            "value": 0.75
+        },
+        {
+            "key": 17,
+            "value": 0.75
+        },
+        {
+            "key": 18,
+            "value": 0.75
+        },
+        {
+            "key": 19,
+            "value": 0.75
+        }
+    ],
+    "int64Stats": [],
+    "stringStats": [
+        {
+            "key": 16,
+            "value": "This raiment, emblazoned with the crest of the Realaidain family and empowered, is a gift from the High Queen and Asheron to those who have made Dereth their home by Morningthaw, PY 15."
+        },
+        {
+            "key": 1,
+            "value": "Realaidain Raiment (Empowered)"
+        },
+        {
+            "key": 14,
+            "value": "This raiment can be dyed."
+        }
+    ],
+    "spellbook": [
+        {"key": 1761, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 712, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 736, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 760, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 784, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 688, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 808, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 834, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 296, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 465, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1713, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1383, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 567, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 320, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 860, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 5775, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 5799, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1359, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1737, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1431, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 884, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 591, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 980, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 908, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 615, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 932, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 956, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 272, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 663, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 243, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 254, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1407, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 5823, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 992, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1455, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 5847, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 5871, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1336, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 6112, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 416, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 5095, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 5407, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 639, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1497, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 5986, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1485, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 6011, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1515, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1527, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 5994, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 6003, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1539, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1551, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1573, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1561, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 6019, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 6028, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 513, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1316, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1028, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1040, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1076, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1095, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 163, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 210, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1143, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 1119, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 187, "value": { "casting_likelihood": 2.0 } }
+        , {"key": 3510, "value": { "casting_likelihood": 2.0 } }
+    ],
+    "changelog": [],
+    "isDone": false
+}

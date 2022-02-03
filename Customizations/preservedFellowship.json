@@ -1,0 +1,1322 @@
+[
+  {
+    "key": 4351,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 7,
+      "component_loss": 0.01,
+      "desc": "Enhances the Coordination of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 4814,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        71,
+        7,
+        70,
+        33,
+        39,
+        70,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668268,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Alacrity of the Conclave",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 8,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4351,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 4,
+            "type": 36865,
+            "val": 45.0
+          },
+          "spellCategory": 7
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.6778861-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4352,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 3,
+      "component_loss": 0.01,
+      "desc": "Enhances the Endurance of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 4848,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        65,
+        7,
+        69,
+        33,
+        44,
+        65,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668273,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Vivify the Conclave",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 10,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4352,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 2,
+            "type": 36865,
+            "val": 45.0
+          },
+          "spellCategory": 3
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.6940121-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4353,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 9,
+      "component_loss": 0.01,
+      "desc": "Enhances the Focus of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 4812,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        64,
+        7,
+        67,
+        33,
+        43,
+        64,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668277,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Acumen of the Conclave",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 16,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4353,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 5,
+            "type": 36865,
+            "val": 45.0
+          },
+          "spellCategory": 9
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.6940121-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4354,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 5,
+      "component_loss": 0.01,
+      "desc": "Enhances the Quickness of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 4844,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        71,
+        7,
+        69,
+        33,
+        38,
+        71,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668294,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Speed the Conclave",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 12,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4354,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 3,
+            "type": 36865,
+            "val": 45.0
+          },
+          "spellCategory": 5
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.7091492-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4355,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 11,
+      "component_loss": 0.01,
+      "desc": "Enhances the Self of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 4850,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        73,
+        7,
+        73,
+        33,
+        40,
+        73,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668296,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Volition of the Conclave",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 14,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4355,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 6,
+            "type": 36865,
+            "val": 45.0
+          },
+          "spellCategory": 11
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.7252796-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4356,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 1,
+      "component_loss": 0.01,
+      "desc": "Enhances the Strength of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 4824,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        69,
+        7,
+        65,
+        33,
+        48,
+        69,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668300,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Empowering the Conclave",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 6,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4356,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 1,
+            "type": 36865,
+            "val": 45.0
+          },
+          "spellCategory": 1
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.7252796-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4357,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8334,
+      "caster_effect": 0,
+      "category": 101,
+      "component_loss": 0.15,
+      "desc": "Reduces damage all fellowship members take from acid by 70%",
+      "display_order": 4822,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        69,
+        13,
+        66,
+        34,
+        42,
+        68,
+        54
+      ],
+      "formula_version": 1,
+      "iconID": 100668344,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Corrosive Ward",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 2,
+      "spell_economy_mod": 0.0,
+      "target_effect": 49,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4357,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 69,
+            "type": 20488,
+            "val": 0.3
+          },
+          "spellCategory": 101
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.7455468-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4358,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8334,
+      "caster_effect": 0,
+      "category": 113,
+      "component_loss": 0.15,
+      "desc": "Reduces damage all fellowship members take from Slashing by 70%",
+      "display_order": 4840,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        73,
+        13,
+        74,
+        34,
+        46,
+        72,
+        54
+      ],
+      "formula_version": 1,
+      "iconID": 100668348,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Scythe Ward",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 2,
+      "spell_economy_mod": 0.0,
+      "target_effect": 47,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4358,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 64,
+            "type": 20488,
+            "val": 0.3
+          },
+          "spellCategory": 113
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.761925-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4359,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8334,
+      "caster_effect": 0,
+      "category": 103,
+      "component_loss": 0.15,
+      "desc": "Reduces damage all fellowship members from Bludgeoning by 70%",
+      "display_order": 4828,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        63,
+        13,
+        66,
+        34,
+        48,
+        74,
+        54
+      ],
+      "formula_version": 1,
+      "iconID": 100668345,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Flange Ward",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 2,
+      "spell_economy_mod": 0.0,
+      "target_effect": 55,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4359,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 66,
+            "type": 20488,
+            "val": 0.3
+          },
+          "spellCategory": 103
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.761925-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4360,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8334,
+      "caster_effect": 0,
+      "category": 105,
+      "component_loss": 0.15,
+      "desc": "Reduces damage all fellowship members take from Cold by 70%",
+      "display_order": 4830,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        66,
+        13,
+        72,
+        34,
+        39,
+        65,
+        54
+      ],
+      "formula_version": 1,
+      "iconID": 100668292,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Frore Ward",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 2,
+      "spell_economy_mod": 0.0,
+      "target_effect": 51,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4360,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 68,
+            "type": 20488,
+            "val": 0.3
+          },
+          "spellCategory": 105
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.78187-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4361,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8334,
+      "caster_effect": 0,
+      "category": 109,
+      "component_loss": 0.15,
+      "desc": "Reduces damage all fellowship members take from fire by 70%",
+      "display_order": 4836,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        72,
+        13,
+        72,
+        34,
+        45,
+        71,
+        54
+      ],
+      "formula_version": 1,
+      "iconID": 100668291,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Inferno Ward",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 2,
+      "spell_economy_mod": 0.0,
+      "target_effect": 43,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4361,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 67,
+            "type": 20488,
+            "val": 0.3
+          },
+          "spellCategory": 109
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.7982183-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4362,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8334,
+      "caster_effect": 0,
+      "category": 107,
+      "component_loss": 0.15,
+      "desc": "Reduces damage all fellowship members take from Lightning by 70%",
+      "display_order": 4852,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        64,
+        13,
+        68,
+        34,
+        37,
+        63,
+        54
+      ],
+      "formula_version": 1,
+      "iconID": 100668346,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Voltaic Ward",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 2,
+      "spell_economy_mod": 0.0,
+      "target_effect": 53,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4362,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 70,
+            "type": 20488,
+            "val": 0.3
+          },
+          "spellCategory": 107
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.7982183-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4363,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8334,
+      "caster_effect": 0,
+      "category": 111,
+      "component_loss": 0.15,
+      "desc": "Reduces damage all fellowship members take from Piercing by 70%",
+      "display_order": 4838,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        70,
+        13,
+        68,
+        34,
+        43,
+        69,
+        54
+      ],
+      "formula_version": 1,
+      "iconID": 100668347,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Lance Ward",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 2,
+      "spell_economy_mod": 0.0,
+      "target_effect": 45,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4363,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 65,
+            "type": 20488,
+            "val": 0.3
+          },
+          "spellCategory": 111
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.8146206-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4364,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8334,
+      "caster_effect": 0,
+      "category": 97,
+      "component_loss": 0.15,
+      "desc": "Enhances the understanding of the ebb and flow of mana. All fellowship members received a 145% increase to their nautral mana recovery rate.",
+      "display_order": 4826,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        69,
+        13,
+        66,
+        34,
+        42,
+        68,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668288,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Endless Well",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 2,
+      "spell_economy_mod": 0.0,
+      "target_effect": 39,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4364,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 5,
+            "type": 20488,
+            "val": 2.45
+          },
+          "spellCategory": 97
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.8146206-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4365,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8334,
+      "caster_effect": 0,
+      "category": 93,
+      "component_loss": 0.15,
+      "desc": "Enhances the blood flow and aids in knitting wounds closed. All fellowship member receive a 145% increase to their natural health recovery rate.",
+      "display_order": 4842,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        69,
+        13,
+        66,
+        34,
+        42,
+        68,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668279,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Soothing Wind",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 2,
+      "spell_economy_mod": 0.0,
+      "target_effect": 37,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4365,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 3,
+            "type": 20488,
+            "val": 2.45
+          },
+          "spellCategory": 93
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.8323033-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4366,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8334,
+      "caster_effect": 0,
+      "category": 95,
+      "component_loss": 0.15,
+      "desc": "Enhances the intake of air and utilization of energy. All fellowship member receive a 145% increase to their natural stamina recovery rate.",
+      "display_order": 4832,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        69,
+        13,
+        66,
+        34,
+        42,
+        68,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668299,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Golden Wind",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 2,
+      "spell_economy_mod": 0.0,
+      "target_effect": 41,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4366,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 4,
+            "type": 20488,
+            "val": 2.45
+          },
+          "spellCategory": 95
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.8323033-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4367,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 43,
+      "component_loss": 0.01,
+      "desc": "Enhances the Creature Enchantment skill of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 4818,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        70,
+        7,
+        67,
+        33,
+        43,
+        67,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668358,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Conjurant Chant",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 26,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4367,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 31,
+            "type": 36880,
+            "val": 45.0
+          },
+          "spellCategory": 43
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.8479716-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4368,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 39,
+      "component_loss": 0.01,
+      "desc": "Enhances the Missile Defense of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 5304,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        65,
+        7,
+        69,
+        33,
+        44,
+        65,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100669126,
+      "mana_mod": 10,
+      "name": "Incantation of Warden of the Clutch",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 10,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4368,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 7,
+            "type": 36880,
+            "val": 45.0
+          },
+          "spellCategory": 39
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.8635948-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4369,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 37,
+      "component_loss": 0.01,
+      "desc": "Enhances the Melee Defense of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 4854,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        71,
+        7,
+        70,
+        33,
+        39,
+        70,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668331,
+      "mana_mod": 10,
+      "name": "Incantation of Guardian of the Clutch",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 8,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4369,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 6,
+            "type": 36880,
+            "val": 45.0
+          },
+          "spellCategory": 37
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.8635948-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4370,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 45,
+      "component_loss": 0.01,
+      "desc": "Enhances the Item Enchantment skill of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 4816,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        65,
+        7,
+        69,
+        33,
+        43,
+        64,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668272,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Artificant Chant",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 26,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4370,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 32,
+            "type": 36880,
+            "val": 45.0
+          },
+          "spellCategory": 45
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.87986-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4371,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 47,
+      "component_loss": 0.01,
+      "desc": "Enhances the Life Magic skill of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 4846,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        66,
+        7,
+        63,
+        33,
+        43,
+        63,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668337,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Vitaeic Chant",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 26,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4371,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 33,
+            "type": 36880,
+            "val": 45.0
+          },
+          "spellCategory": 47
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.87986-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4372,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 41,
+      "component_loss": 0.01,
+      "desc": "Enhances the Magic Defense of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 5224,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        64,
+        7,
+        67,
+        33,
+        43,
+        64,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668330,
+      "mana_mod": 10,
+      "name": "Incantation of Sanctifier of the Clutch",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 16,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4372,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 15,
+            "type": 36880,
+            "val": 45.0
+          },
+          "spellCategory": 41
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.8954988-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4373,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 51,
+      "component_loss": 0.01,
+      "desc": "Enhances the Mana Conversion skill of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 4820,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        63,
+        7,
+        70,
+        33,
+        43,
+        70,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668288,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Conveyic Chant",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 26,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4373,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 16,
+            "type": 36880,
+            "val": 45.0
+          },
+          "spellCategory": 51
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.9111252-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  },
+  {
+    "key": 4374,
+    "value": {
+      "base_mana": 80,
+      "base_range_constant": 5.0,
+      "base_range_mod": 0.25,
+      "bitfield": 8206,
+      "caster_effect": 0,
+      "category": 49,
+      "component_loss": 0.01,
+      "desc": "Enhances the War Magic skill of all Fellowship members by 45 points for 90 minutes.",
+      "display_order": 4834,
+      "fizzle_effect": 0,
+      "formula": [
+        193,
+        64,
+        7,
+        67,
+        33,
+        43,
+        67,
+        190
+      ],
+      "formula_version": 1,
+      "iconID": 100668272,
+      "mana_mod": 10,
+      "name": "Incantation of Greater Hieromantic Chant",
+      "non_component_target_type": 16,
+      "power": 400,
+      "recovery_amount": 0.0,
+      "recovery_interval": 0.0,
+      "school": 4,
+      "spell_economy_mod": 1.0,
+      "target_effect": 26,
+      "meta_spell": {
+        "sp_type": 12,
+        "spell": {
+          "spell_id": 4374,
+          "degrade_limit": -666.0,
+          "degrade_modifier": 0.0,
+          "duration": 5400.0,
+          "smod": {
+            "key": 34,
+            "type": 36880,
+            "val": 45.0
+          },
+          "spellCategory": 49
+        }
+      }
+    },
+    "lastModified": "2020-07-24T15:01:21.9111252-04:00",
+    "modifiedBy": "Mithrandyr",
+    "changelog": [],
+    "isDone": false
+  }
+]

@@ -1,0 +1,139 @@
+{
+    "wcid": 200020,
+    "weenieType": 38,
+    "boolStats": [
+        {
+            "key": 11,
+            "value": 1
+        },
+        {
+            "key": 13,
+            "value": 1
+        },
+        {
+            "key": 14,
+            "value": 1
+        },
+        {
+            "key": 19,
+            "value": 1
+        },
+        {
+            "key": 22,
+            "value": 1
+        },
+        {
+            "key": 69,
+            "value": 0
+        }
+    ],
+    "intStats": [
+        {
+            "key": 1,
+            "value": 128
+        },
+        {
+            "key": 5,
+            "value": 100
+        },
+        {
+            "key": 11,
+            "value": 1
+        },
+        {
+            "key": 12,
+            "value": 1
+        },
+        {
+            "key": 16,
+            "value": 8
+        },
+        {
+            "key": 19,
+            "value": 2
+        },
+        {
+            "key": 33,
+            "value": 1
+        },
+        {
+            "key": 53,
+            "value": 101
+        },
+        {
+            "key": 93,
+            "value": 1044
+        },
+        {
+            "key": 94,
+            "value": 16
+        },
+        {
+            "key": 269,
+            "value": 1
+        }
+    ],
+    "didStats": [
+        {
+            "key": 1,
+            "value": 33556223
+        },
+        {
+            "key": 3,
+            "value": 536870932
+        },
+        {
+            "key": 6,
+            "value": 67111928
+        },
+        {
+            "key": 8,
+            "value": 100668152
+        },
+        {
+            "key": 22,
+            "value": 872415275
+        },
+        {
+            "key": 50,
+            "value": 100673280
+        },
+        {
+            "key": 38,
+            "value": 29578
+        }
+    ],
+    "iidStats": [],
+    "floatStats": [
+        {
+            "key": 39,
+            "value": 0.8
+        }
+    ],
+    "int64Stats": [],
+    "stringStats": [
+        {
+            "key": 1,
+            "value": "Sealed Crate of Salvaged Jet"
+        },
+        {
+            "key": 16,
+            "value": "Foolproof - Lightning Rend."
+        },
+        {
+            "key": 14,
+            "value": "Use this crate to break the seal and open it."
+        }
+    ],
+    "lastModified": "2020-11-19T21:24:10.2471661-06:00",
+    "modifiedBy": "FireChimp",
+    "changelog": [
+        {
+            "created": "2020-11-19T22:03:43.7151949-06:00",
+            "author": "FireChimp",
+            "comment": "14 - Use\nchanged weenie type to gem\nadd 269 - Use Create Quantity\nadd 038 - Use Create Item"
+        }
+    ],
+    "userChangeSummary": "14 - Use\nchanged weenie type to gem\nadd 269 - Use Create Quantity\nadd 038 - Use Create Item",
+    "isDone": true
+}

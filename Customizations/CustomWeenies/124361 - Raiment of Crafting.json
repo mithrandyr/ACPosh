@@ -1,0 +1,257 @@
+{
+    "wcid": 124361,
+    "weenieType": 2,
+    "boolStats": [
+        {
+            "key": 11,
+            "value": 1
+        },
+        {
+            "key": 13,
+            "value": 1
+        },
+        {
+            "key": 14,
+            "value": 1
+        },
+        {
+            "key": 19,
+            "value": 1
+        },
+        {
+            "key": 22,
+            "value": 1
+        },
+        {
+            "key": 100,
+            "value": 1
+        }
+    ],
+    "intStats": [
+        {
+            "key": 1,
+            "value": 4
+        },
+        {
+            "key": 3,
+            "value": 61
+        },
+        {
+            "key": 4,
+            "value": 126
+        },
+        {
+            "key": 5,
+            "value": 800
+        },
+        {
+            "key": 8,
+            "value": 90
+        },
+        {
+            "key": 9,
+            "value": 222
+        },
+        {
+            "key": 16,
+            "value": 1
+        },
+        {
+            "key": 19,
+            "value": 5000
+        },
+        {
+            "key": 27,
+            "value": 1
+        },
+        {
+            "key": 28,
+            "value": 0
+        },
+        {
+            "key": 53,
+            "value": 101
+        },
+        {
+            "key": 93,
+            "value": 1044
+        },
+        {
+            "key": 106,
+            "value": 300
+        },
+        {
+            "key": 107,
+            "value": 800
+        },
+        {
+            "key": 108,
+            "value": 800
+        },
+        {
+            "key": 109,
+            "value": 110
+        },
+        {
+            "key": 158,
+            "value": 7
+        },
+        {
+            "key": 159,
+            "value": 1
+        },
+        {
+            "key": 160,
+            "value": 80
+        }
+    ],
+    "didStats": [
+        {
+            "key": 1,
+            "value": 33554854
+        },
+        {
+            "key": 3,
+            "value": 536870932
+        },
+        {
+            "key": 6,
+            "value": 67108990
+        },
+        {
+            "key": 7,
+            "value": 268436640
+        },
+        {
+            "key": 8,
+            "value": 100667370
+        },
+        {
+            "key": 22,
+            "value": 872415275
+        },
+        {
+            "key": 36,
+            "value": 234881046
+        }
+    ],
+    "iidStats": [],
+    "floatStats": [
+        {
+            "key": 5,
+            "value": -0.025
+        },
+        {
+            "key": 12,
+            "value": 0.33
+        },
+        {
+            "key": 13,
+            "value": 0.8
+        },
+        {
+            "key": 14,
+            "value": 0.8
+        },
+        {
+            "key": 15,
+            "value": 1.0
+        },
+        {
+            "key": 16,
+            "value": 0.2
+        },
+        {
+            "key": 17,
+            "value": 0.2
+        },
+        {
+            "key": 18,
+            "value": 0.1
+        },
+        {
+            "key": 19,
+            "value": 0.2
+        },
+        {
+            "key": 165,
+            "value": 1.0
+        }
+    ],
+    "int64Stats": [],
+    "stringStats": [
+        {
+            "key": 1,
+            "value": "Raiment of Crafting"
+        },
+        {
+            "key": 16,
+            "value": "Silken raiment woven together to be worn over the entirety of the body. Simple clasps allow for the item to be cinched along the front. Very Powerful for Crafting!"
+        }
+    ],
+    "spellbook": [
+        {
+            "key": 2424,
+            "value": {
+                "casting_likelihood": 2.0
+            }
+        },
+        {
+            "key": 2347,
+            "value": {
+                "casting_likelihood": 2.0
+            }
+        },
+        {
+            "key": 6176,
+            "value": {
+                "casting_likelihood": 2.0
+            }
+        },
+        {
+            "key": 6105,
+            "value": {
+                "casting_likelihood": 2.0
+            }
+        },
+        {
+            "key": 3705,
+            "value": {
+                "casting_likelihood": 2.0
+            }
+        }
+        ,{"key": 3862,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 2638,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 6102,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 3733,"value": {"casting_likelihood": 2.0}}
+        
+        ,{"key": 3533,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 6103,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 4280,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 3694,"value": {"casting_likelihood": 2.0}}
+
+        ,{"key": 3863,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 6104,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 3700,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 4737,"value": {"casting_likelihood": 2.0}}
+        
+        ,{"key": 3864,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 6107,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 3738,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 4749,"value": {"casting_likelihood": 2.0}}
+
+        ,{"key": 3681,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 3693,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 3704,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 3683,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 3714,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 3722,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 3744,"value": {"casting_likelihood": 2.0}}
+
+        ,{"key": 3757,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 6068,"value": {"casting_likelihood": 2.0}}
+        ,{"key": 4867,"value": {"casting_likelihood": 2.0}}
+    ],
+    "changelog": [],
+    "isDone": false
+}

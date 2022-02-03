@@ -1,6 +1,7 @@
 param([parameter(Mandatory,ValueFromPipeline,ValueFromPipelineByPropertyName)][Alias("FullName")][string]$Path
     , [parameter()][hashtable]$ItemDropRates
     , [parameter()][string]$ChangedInfoDirectory = "E:\Games\trackChanges"
+    , [string]$NewHome = "E:\Games\ACServer\Data\json\weenies\80_custom"
     , [switch]$noChange
 )
 begin {
@@ -79,6 +80,8 @@ end {
                         Set-Content -Path (Join-Path $ChangedInfoDirectory ("changed-{0}-{1:yyyyMMdd}.json" -f $changeData.wcid, (get-date)))
                     
                     if(-not $noChange){
+                        if($NewHome) { $file = Join-Path $NewHome (Split-Path $file -Leaf) }
+                        
                         $data |
                         ConvertTo-Json -Compress -Depth 10 | 
                         Set-Content -Path $file

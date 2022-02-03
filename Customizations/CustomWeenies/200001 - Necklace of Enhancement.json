@@ -1,0 +1,112 @@
+{
+    "wcid": 200001,
+    "weenieType": 1,
+    "boolStats": [
+        {
+            "key": 22,
+            "value": 1
+        },
+        {
+            "key": 23,
+            "value": 1
+        }
+    ],
+    "intStats": [
+        {
+            "key": 1,
+            "value": 8
+        },
+        {
+            "key": 5,
+            "value": 100
+        },
+        {
+            "key": 8,
+            "value": 30
+        },
+        {
+            "key": 9,
+            "value": 32768
+        },
+        {
+            "key": 16,
+            "value": 1
+        },
+        {
+            "key": 18,
+            "value": 1
+        },
+        {
+            "key": 19,
+            "value": 0
+        },
+        {
+            "key": 33,
+            "value": 1
+        },
+        {
+            "key": 93,
+            "value": 1044
+        },
+        {
+            "key": 106,
+            "value": 200
+        },
+        {
+            "key": 107,
+            "value": 100
+        },
+        {
+            "key": 108,
+            "value": 210
+        },
+        {
+            "key": 109,
+            "value": 100
+        }
+    ],
+    "didStats": [
+        {
+            "key": 1,
+            "value": 33557376
+        },
+        {
+            "key": 3,
+            "value": 536870932
+        },
+        {
+            "key": 36,
+            "value": 234881046
+        },
+        {
+            "key": 8,
+            "value": 100672190
+        },
+        {
+            "key": 22,
+            "value": 872415275
+        }
+    ],
+    "iidStats": [],
+    "floatStats": [
+        {
+            "key": 5,
+            "value": 0
+        }
+    ],
+    "int64Stats": [],
+    "stringStats": [
+        {
+            "key": 1,
+            "value": "Necklace of Enhancement"
+        }
+    ],
+    "spellbook": [
+        { "key": 5258, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 5213, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 5228, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 5243, "value": { "casting_likelihood": 2.0 } }        
+    ],
+    "changelog": [],
+    "isDone": false
+}

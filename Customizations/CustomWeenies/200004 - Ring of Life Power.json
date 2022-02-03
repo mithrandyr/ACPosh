@@ -1,0 +1,139 @@
+{
+    "wcid": 200004,
+    "weenieType": 1,
+    "boolStats": [
+        {
+            "key": 22,
+            "value": 1
+        },
+        {
+            "key": 23,
+            "value": 1
+        }
+    ],
+    "intStats": [
+        {
+            "key": 9,
+            "value": 786432
+        },
+        {
+            "key": 1,
+            "value": 8
+        },
+        {
+            "key": 19,
+            "value": 0
+        },
+        {
+            "key": 3,
+            "value": 2
+        },
+        {
+            "key": 93,
+            "value": 1044
+        },
+        {
+            "key": 5,
+            "value": 15
+        },
+        {
+            "key": 16,
+            "value": 1
+        },
+        {
+            "key": 8,
+            "value": 10
+        },
+        {
+            "key": 18,
+            "value": 1
+        },
+        {
+            "key": 33,
+            "value": 1
+        },
+        {
+            "key": 106,
+            "value": 350
+        },
+        {
+            "key": 107,
+            "value": 500
+        },
+        {
+            "key": 108,
+            "value": 500
+        },
+        {
+            "key": 109,
+            "value": 1
+        },
+        {
+            "key": 114,
+            "value": 1
+        }
+    ],
+    "didStats": [
+        {
+            "key": 1,
+            "value": 33554691
+        },
+        {
+            "key": 3,
+            "value": 536870932
+        },
+        {
+            "key": 36,
+            "value": 234881046
+        },
+        {
+            "key": 22,
+            "value": 872415275
+        },
+        {
+            "key": 6,
+            "value": 67111919
+        },
+        {
+            "key": 7,
+            "value": 268436318
+        },
+        {
+            "key": 8,
+            "value": 100672480
+        }
+    ],
+    "iidStats": [],
+    "floatStats": [
+        {
+            "key": 5,
+            "value": 0.0
+        },
+        {
+            "key": 39,
+            "value": 0.5
+        }
+    ],
+    "int64Stats": [],
+    "stringStats": [
+        {
+            "key": 1,
+            "value": "Ring of Life Power"
+        }
+    ],
+    "spellbook": [
+        { "key": 4291, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4462, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4464, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4472, "value": { "casting_likelihood": 2.0 } }        
+        , { "key": 4460, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4466, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4468, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4470, "value": { "casting_likelihood": 2.0 } }        
+        , { "key": 4496, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4498, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4494, "value": { "casting_likelihood": 2.0 } }
+    ],
+    "changelog": [],
+    "isDone": false
+}

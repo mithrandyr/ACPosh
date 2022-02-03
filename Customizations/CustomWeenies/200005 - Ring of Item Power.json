@@ -1,0 +1,129 @@
+{
+    "wcid": 200005,
+    "weenieType": 1,
+    "boolStats": [
+        {
+            "key": 22,
+            "value": 1
+        },
+        {
+            "key": 23,
+            "value": 1
+        }
+    ],
+    "intStats": [
+        {
+            "key": 1,
+            "value": 8
+        },
+        {
+            "key": 3,
+            "value": 2
+        },
+        {
+            "key": 5,
+            "value": 15
+        },
+        {
+            "key": 8,
+            "value": 10
+        },
+        {
+            "key": 9,
+            "value": 786432
+        },
+        {
+            "key": 16,
+            "value": 1
+        },
+        {
+            "key": 18,
+            "value": 1
+        },
+        {
+            "key": 19,
+            "value": 0
+        },
+        {
+            "key": 33,
+            "value": 1
+        },
+        {
+            "key": 93,
+            "value": 1044
+        },
+        {
+            "key": 106,
+            "value": 350
+        },
+        {
+            "key": 107,
+            "value": 500
+        },
+        {
+            "key": 108,
+            "value": 500
+        },
+        {
+            "key": 109,
+            "value": 1
+        },
+        {
+            "key": 114,
+            "value": 1
+        }
+    ],
+    "didStats": [
+        {
+            "key": 1,
+            "value": 33554691
+        },
+        {
+            "key": 3,
+            "value": 536870932
+        },
+        {
+            "key": 36,
+            "value": 234881046
+        },
+        {
+            "key": 22,
+            "value": 872415275
+        },
+        {
+            "key": 6,
+            "value": 67111919
+        },
+        {
+            "key": 7,
+            "value": 268436318
+        },
+        {
+            "key": 8,
+            "value": 100672480
+        }
+    ],
+    "floatStats": [
+        {
+            "key": 5,
+            "value": 0.0
+        }
+    ],
+    "stringStats": [
+        {
+            "key": 1,
+            "value": "Ring of Item Power"
+        }
+    ],
+    "spellbook": [
+         { "key": 4417, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4418, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4405, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4395, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4400, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 5182, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4414, "value": { "casting_likelihood": 2.0 } }
+    ],
+    "changelog": [],
+    "isDone": false
+}

@@ -1,0 +1,154 @@
+{
+    "wcid": 200003,
+    "weenieType": 1,
+    "boolStats": [
+        {
+            "key": 22,
+            "value": 1
+        },
+        {
+            "key": 23,
+            "value": 1
+        }
+    ],
+    "intStats": [
+        {
+            "key": 9,
+            "value": 196608
+        },
+        {
+            "key": 1,
+            "value": 8
+        },
+        {
+            "key": 19,
+            "value": 0
+        },
+        {
+            "key": 3,
+            "value": 82
+        },
+        {
+            "key": 93,
+            "value": 1044
+        },
+        {
+            "key": 5,
+            "value": 60
+        },
+        {
+            "key": 16,
+            "value": 1
+        },
+        {
+            "key": 8,
+            "value": 30
+        },
+        {
+            "key": 18,
+            "value": 1
+        },
+        {
+            "key": 33,
+            "value": 1
+        },
+        {
+            "key": 106,
+            "value": 350
+        },
+        {
+            "key": 107,
+            "value": 600
+        },
+        {
+            "key": 108,
+            "value": 600
+        },
+        {
+            "key": 109,
+            "value": 1
+        },
+        {
+            "key": 114,
+            "value": 1
+        }
+    ],
+    "didStats": [
+        {
+            "key": 1,
+            "value": 33554683
+        },
+        {
+            "key": 3,
+            "value": 536870932
+        },
+        {
+            "key": 36,
+            "value": 234881046
+        },
+        {
+            "key": 22,
+            "value": 872415275
+        },
+        {
+            "key": 6,
+            "value": 67111919
+        },
+        {
+            "key": 7,
+            "value": 268436286
+        },
+        {
+            "key": 8,
+            "value": 100672215
+        }
+    ],
+    "floatStats": [
+        {
+            "key": 5,
+            "value": 0.0
+        }
+    ],
+    "stringStats": [
+        {
+            "key": 1,
+            "value": "Bracelet of Skill Power"
+        }
+    ],
+    "spellbook": [
+        { "key": 4510, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4604, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4608, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4631, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4522, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4530, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4538, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4542, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 5786, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 5810, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4552, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4556, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4564, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4572, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4578, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4582, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4586, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4548, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4596, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4602, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4560, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4558, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 5834, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4616, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4499, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 5858, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 5882, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 6123, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4624, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 5032, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 5418, "value": { "casting_likelihood": 2.0 } }
+        , { "key": 4638, "value": { "casting_likelihood": 2.0 } }
+    ],
+    "changelog": [],
+    "isDone": false
+}
